@@ -5,11 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Responsive Web design</title>
+  <style type="text/css" media="all">
+    *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  width: 90%;
+  margin: 10px auto;
+  background-color: lightblue;
+  padding: 10px 0;
+}
+
+.row{
+  margin: 0 10px;
+  padding: 10px;
+  background-color: red;
+}
+
+
+@media (min-width > 1200px) {
+.col-md-12{
+  background-color: pink;
+  width: 100%;
+}
+.col-md-11{
+  width: 91.6%;
+  background-color: pink;
+}
+.col-md-10{
+  width: 83.3%;
+  background-color: pink;
+}
+.col-md-9{
+  width: 74.87%;
+  background-color: pink;
+}
+.col-md-8{
+  width: 66.64%;
+  background-color: pink;
+}
+.col-md-7{
+  width: 58.31%;
+  background-color: pink;
+}
+.col-md-6{
+  width: 50%;
+  background-color: pink;
+}
+}
+
+@media (max-width < 760px) and (min-width > 1px){
+  .col-sm-11{
+    color: pink;
+    background-color: green;
+  }
+    
+}
+
+
+  </style>
 </head>
 <body>
   <div class="wrapper">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-11">
         This is a div
       </div>
     </div>
