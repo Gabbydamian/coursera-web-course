@@ -1,1 +1,16 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+  background-color: lightblue;
+}
+
+.row{
+  margin: 10px;
+  background-color: red;
+}
